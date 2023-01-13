@@ -1,0 +1,831 @@
+<html>
+<title>
+B3 ROSTER
+</title>
+<head>
+<style>
+</style>
+<meta charset="UTF-8">
+ <script>
+
+function expandAll()
+{
+      document.getElementById('para').style.display = "inline";
+      document.getElementById('mydiv').innerHTML = "[Close News] "
+
+      document.getElementById('paraNotes').style.display = "inline";
+      document.getElementById('mydivNotes').innerHTML = "[Close Roster Notes] "
+
+      if (document.getElementById('paraChangelog')) {
+         document.getElementById('paraChangelog').style.display = "inline";
+         document.getElementById('mydivChangelog').innerHTML = "             [Close Changelog] "
+      }
+
+      document.getElementById('priceList').style.display = "inline";
+      document.getElementById('mydivPriceList').innerHTML = "[Close Price List] "
+
+      document.getElementById('paraPhoneNums').style.display = "inline";
+      document.getElementById('divPhoneNums').innerHTML = "[Close Phone Numbers] "
+}
+function contractAll()
+{
+      document.getElementById('para').style.display = "none";
+      document.getElementById('mydiv').innerHTML = "[+] "
+
+      document.getElementById('paraNotes').style.display = "none";
+      document.getElementById('mydivNotes').innerHTML = "[+] "
+
+   if (document.getElementById('paraChangelog')) {
+
+      document.getElementById('paraChangelog').style.display = "none";
+      document.getElementById('mydivChangelog').innerHTML = "             [+] "
+   }
+      document.getElementById('priceList').style.display = "none";
+      document.getElementById('mydivPriceList').innerHTML = "[+] "
+
+      document.getElementById('paraPhoneNums').style.display = "none";
+      document.getElementById('divPhoneNums').innerHTML = "[+] "
+
+}
+function expandContract()
+{
+   if(document.getElementById('mydiv').innerHTML == "[+] ")
+   {
+      document.getElementById('para').style.display = "inline";
+      document.getElementById('mydiv').innerHTML = "[Close News] "
+   }
+   else
+   {
+      document.getElementById('para').style.display = "none";
+      document.getElementById('mydiv').innerHTML = "[+] "
+   }
+}
+function expandContractNotes()
+{
+   if(document.getElementById('mydivNotes').innerHTML == "[+] ")
+   {
+      document.getElementById('paraNotes').style.display = "inline";
+      document.getElementById('mydivNotes').innerHTML = "[Close Roster Notes] "
+   }
+   else
+   {
+      document.getElementById('paraNotes').style.display = "none";
+      document.getElementById('mydivNotes').innerHTML = "[+] "
+   }
+}
+function expandContractPriceList()
+{
+   if(document.getElementById('mydivPriceList').innerHTML == "[+] ")
+   {
+      document.getElementById('priceList').style.display = "inline";
+      document.getElementById('mydivPriceList').innerHTML = "[Close Price List] "
+   }
+   else
+   {
+      document.getElementById('priceList').style.display = "none";
+      document.getElementById('mydivPriceList').innerHTML = "[+] "
+   }
+}
+function expandContractChangelog()
+{
+   if(document.getElementById('mydivChangelog').innerHTML == "             [+]")
+   {
+      document.getElementById('paraChangelog').style.display = "inline";
+      document.getElementById('mydivChangelog').innerHTML = "             [Close Changelog] "
+   }
+   else
+   {
+      document.getElementById('paraChangelog').style.display = "none";
+      document.getElementById('mydivChangelog').innerHTML = "             [+]"
+   }
+}
+
+function expandContractPhoneNums()
+{
+   if(document.getElementById('divPhoneNums').innerHTML == "[+] ")
+   {
+      document.getElementById('paraPhoneNums').style.display = "inline";
+      document.getElementById('divPhoneNums').innerHTML = "[Close Phone Numbers] "
+   }
+   else
+   {
+      document.getElementById('paraPhoneNums').style.display = "none";
+      document.getElementById('divPhoneNums').innerHTML = "[+] "
+   }
+}
+
+function blinker(id, mode) {
+   var f = document.getElementById(id);
+
+   if (f)
+   {
+      if (mode == "on")
+      {
+         f.style.display = "inline";
+         f.innerHTML = "<b>   [New]   </b>";
+         setInterval
+         (
+function()
+			{
+				f.style.background = (f.style.background == 'none' ? '#99FF99' : 'none');
+			}, 
+			1000
+		);
+      }
+      else if (mode == "off")
+      {
+         f.style.display = 'none';
+      }
+   }
+}
+
+function OnLoad() {
+   blinker("LastUpdatePhotos", "off");
+   blinker("LastUpdatePriceList", "off");
+   blinker("LastUpdateNews", "off");
+   blinker("LastUpdateLegend", "off");
+}
+
+</script>
+
+
+</head>
+
+<body onload="OnLoad();" style="width: 500px">
+
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10119720;
+var sc_invisible=1;
+var sc_security="92844a60";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify traffic
+stats" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10119720/0/92844a60/1/"
+alt="shopify traffic stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+<!-- <mark style="background-color:#00FF00;">%</mark> -->
+<!-- light red: #FF9090 -->
+<!-- light yellow: #FFFF99 #ffff7f-->
+<!-- light BLUE: #99CCFF -->
+<!-- light grey: #CCCCCC -->
+<!-- light green: #99FF99 -->
+<!-- light light green: #BCED91 -->
+<!-- hazel/brown: #f8c89f , #c5c1a4-->
+<!-- light ORANGE: #FF9933 GOLD: ffd700-->
+<!--light pink: #ffc0cb -->
+
+<!-- rainbow: &#x1F308 -->
+<!-- construction barrier: &#x1F6A7 -->
+<!-- bellhop bell: &#x1F6CE -->
+<!-- alarm clock: &#x23F0 -->
+<!-- shooting star: &#x1F320	 -->
+<!-- rocket: &#x1F680
+     ufo: &#x1F6F8	 -->
+<!-- pi: &#x1F4CC	-->
+<!-- party face: &#x1F973 -->
+<!-- jack o lantern: &#x1F383 -->
+<!-- christmas tree: &#x1F384 -->
+<!-- sprakler: &#x1F387 -->
+<!-- smiling face: &#x1F60A, 
+     star eyes: &#x1F929
+     pregnant woman: &#x1F930
+     baby: &#x1F476	
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<pre width="10"><span id = "expandAll" style = "cursor:hand;color:royalblue" onclick = "expandAll();">[+ all]</span>
+<span id = "contractAll" style = "cursor:hand;color:royalblue" onclick = "contractAll();">[Close all]</span>
+<div>
+
+B3 ROSTER
+
+<b>Stock 
+Tracker -</b>    <a href="./stock-keeper-baguettes.php"><b>(1) Baguettes Stock Keeper </b> (baguette, croissant, cakes)</a>
+              
+             <a href= "./stock-keeper-template.php" ><b>(2) Shop Stock Keeper </b> (bags, fillings, sauces, drinks)</a>
+              
+              
+
+<b>Status -</b>  <mark><b>>> Draft <<</mark></b>
+             Pending Confirmation
+             Final
+             <!-- 
+                  [Final] &#x2705
+                  [Pending Confirmation] &#x23F0
+                  ABOVE.. for <mark>ed line, "<" starts at 11 . /// DRAFT "<" is 18 
+     <span id = "paraChangelog" style = "display:none">    -->
+<b>Changelog</b> -  #5   (Thu 12/01, 16:21)   Draft #4
+             #4   (Sun 08/01, 23:20)   Draft #3
+             #3   (Sun 08/01, 19:21)   Draft #2
+             #2   (Sun 08/01, 18:28)   Draft #1
+             #1   (Sat 24/12, 11:11)   Christmas Holidays !!</span>
+<!-- ABOVE.. ^col: 14 #x, 38 [x]     ^--><span id = "mydivChangelog" style = "cursor:hand;color:royalblue" onclick = "expandContractChangelog();">             [+]</span>
+
+<!--
+<b>Photos</b> -     <a href="https://www.flickr.com/gp/131712031@N02/Ft83xa">2014</a>, <a href="https://www.flickr.com/gp/131712031@N02/C314Q0">2015</a>, <a href="https://www.flickr.com/gp/131712031@N02/vtX8i9" target="_blank">2016</a>, --><!--<a href="https://flic.kr/s/aHskUctFbt" target="_blank">2017</a>--><!--<a href="https://unit-zero.myDS.me/photo/?t=Albums/album_62332032303137#Albums/album_62332032303137" target="_blank"><b>2017</b></a>, <a href="https://unit-zero.myDS.me/photo/?t=Albums/album_62332032303138#Albums/album_62332032303138" target="_blank"><b>2018</b></a>, <a href="https://unit-zero.myDS.me:5001/mo/sharing/BjnSIvuRa" target="_blank"><b>2019</b></a><span id="LastUpdatePhotos">(checking...)</span>-->
+<b>Price List</b> - <span id = "mydivPriceList" style = "cursor:hand;color:royalblue" onclick = "expandContractPriceList();">[+] </span> <span id="LastUpdatePriceList"> (checking..) </span>
+<div id = "priceList" style = "display:none">
+             <b> Employee price list </b>
+                 <b> (price - $1.0)</b>
+                 Baguette (p) -        $5.50
+                 Baguette (g) -        $8.00
+
+                 <b> (price - $0.5)</b>
+                 Donuts -              $2.50
+                 Muffins -             $3.00
+                 Cake slices -         $3.00
+                 Noah's -              $3.00
+                 Sunzest -             $3.00
+                 Coke bottles,
+                  Red Bull, V, etc -   $3.50
+                 Coke cans -           $1.50
+
+</div>
+<b>News -</b>       <span id = "mydiv" style = "cursor:hand;color:royalblue" onclick = "expandContract();">[+] </span> <span id="LastUpdateNews"> (checking..) </span>
+<div id = "para" style = "display:none">
+
+             <a href="https://www.b3cafe.com.au/private/LC-Schedule.pdf">LC-Schedule.pdf</a>
+
+             <mark style="background-color:#ffff7f;"> <b>0. Square machines and declined sales</b> </mark>
+             During a card sale, please take a few extra seconds
+             to confirm the payment goes through successfully. It's
+             more troublesome to run after people and get them to
+             come back. It'll also teach customers to wait until the
+             card company approves the sale, before they head off.
+             If square doesn't say "confirmed", but the customer's
+             phone says "paid", this means Square didn't process it
+             (and the phone confirmed too early). However we can't do
+             anything about this besides telling customer "Please
+             check later and if you weren't charged, please come back"
+
+             <mark style="background-color:#BCED91;"> <b>1. Employee price list changes </b> </mark>
+             Pls check employee price list if you want to buy anything!
+
+             <mark style="background-color:#ffc0cb;"> <b>2. Please put your phone on LOUD </b> </mark>
+             Hey guys, we had a sick person last week. I tried to
+             organise someone to cover, but had trouble calling people.
+             I called some people 20 times, sorry! If you coud, please
+             put your phone on LOUD or add me to your favourites
+             so that my phone calls get through. Don't worry, I will
+             call you if it's an emergency! Thanks! See NOTE 4 below.
+
+             <mark style="background-color:#FF9933;"> <b>3. When you're starting to feel sick </b> </mark>
+             Hey guys ! Some of you guys have been sick recently and
+             need to take a day off work. That's cool ! But please
+             let me (Mony) know asap if youre starting to feel sick.
+             I normally sleep at 9:00pm. So if you message me
+             afterwards I will only get it the next morning. In this
+             case, please call me and <mark>wake me up!!</mark> I much prefer
+             being woken up than bothering people in the morning.
+             No one likes me calling them in the morning to come in
+             earlier, or to come in on their day off !! Thanks guys !
+
+             <mark style="background-color:#99FF99;">4. <b>B3 Roster and LINE</b> </mark>
+             LINE sometimes does not refresh the roster after changes.
+             So please use - iOS: <b>Safari, Brave</b>, Android: <b>Brave</b></a>
+
+             <mark style="background-color:#99CCFF;"> <b>5. Taking food for yourself</b> </mark>
+             Guys a couple of people have asked me how much food
+             each person can take for themselves each day, for eg break
+             time. To clear up any confusion, the answer is -
+             - 1 baguette or 1 croissant
+             - 1 bottle of water
+             Any extra food or drink you want to take, please refer to
+             above "employee price list" and purchase them at that
+             price.
+
+             <mark style="background-color:#99CCFF;"> <b>6. When you arrive at work</b> </mark>
+             When you get to work, you should be ready to get straight
+             to it. If you need to do your hair or makeup, this should
+             be done <mark> before </mark> you arrive to work. We have noticed
+             a few people taking too long to get ready when they arrive,
+             so please double check your morning preparations and if
+             you're taking longer than a minute or two to get ready
+             once you arrive, then you should wake up earlier.
+
+            <mark style="background-color:#FF9090;"> <b>7. When you're late to work  </b></mark>
+             ... everyone else is affected. Last week, too many
+             people were arriving to work late. To be clear, if
+             your shift starts 07:30, then the <b>absolute latest</b>
+             time to arrive is 07:30.
+
+             Thank you to everyone who always arrives before their
+             scheduled time, you really make mine and everyone
+             else's job easier! To everyone else, please try harder!!
+
+</div>
+<b>Phone Nums   </b><span id = "divPhoneNums" style = "cursor:hand;color:royalblue" onclick = "expandContractPhoneNums();">[+] </span>
+<div id = "paraPhoneNums" style = "display:none">
+        CP iPhone - <a href="tel:+61434978108">0434 978 108</a>
+        LC iPhone - <a href="tel:+61468575110">0468 575 110</a>
+        Mony - <a href="tel:+61435087341">0435 087 341</a>
+        Whitney - <a href="tel:+61433088706">0433 088 706</a>
+        Dad - <a href="tel:+61434824911">0434 824 911</a>
+        Mum - <a href="tel:+61435246867">0435 246 867</a>
+      </div>
+<b>THIS week's
+notes        </b><span id = "mydivNotes" style = "cursor:hand;color:royalblue" onclick = "expandContractNotes();">[+] </span> <span id="LastUpdateLegend"> (checking..) </span>
+<span id = "paraNotes" style = "display:none"></span>
+
+
+
+&#x1F384&#x1F384 <mark style="background-color:#99FF99;"> <b>   Christmas Holidays !!   </b></mark>
+OMG Christmas is already upon us !! We will be closed as usual for 
+about three weeks. Dates to be confirmed soon! We are thinking:
+Last day 2022:   <u>Thu 22/12/22</u>
+First day 2023:  <u>Mon 16/01/23</u>
+
+
+&#x1F4CC&#x1F4CC <mark style="background-color:#ffff7f;"><b>   Please let Mony know your Nov/Dec/Jan plans !  </b></mark>
+So that I can organise roster appropriately &#x1F6F8
+
+<!--
+Emma:	Returning Wed 04/01/23
+Lani:   Returning Wed 11/01/23
+
+
+
+&#x1F4CC&#x1F4CC <mark><b>   Roster change !   </b></mark>
+CP-e new time: 0900-1630 [7.5]. Old time was 0900-1530 [6.5]
+
+&#x1F930&#x1F476 <mark style="background-color:#ffc0cb;">   Whitney final week !   </mark>
+Whitney leaving early Wednesday at 2pm, Emma to cover from 1pm-4pm [3.0]
+
+CP-b*   Mon-Fri      |LC 0730-0800 (0.5)
+                     |CP 0800-1430 (6.5) [7.0]                               
+
+Songi-  Mon,Wed,Thu  |CP 0900-1530 [6.5]
+Lani+   Tue          |CP 0900-1600 [7.0]
+Yuna-   Fri          |CP 0900-1530 [6.5]
+
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 24/10/2022                                  |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere       Nere     Nere/Emma    Nere      Nere    |
+| b|7.0*   0730-1430      Yuna       Emma       Yuna       Emma      Emma    |
+| c|6.0    0800-1400      Rei        Rei        Lani       Rei       Dasol   |
+| e|7.5    0900-1630      Songi-     Yuna       Songi-     Songi-    Yuna-   |
+| i|6.0    1000-1600      Erol       Lani+      Dasol      Erol      Erol    |
+|                                                                            |
+| t|4.0    1000-1400      Rina       Rina       Rina       /         /       |
+| u|4.0    0900-1300      Yukari     /          /          Yukari    Yukari  |
+| v|1.0    1130-1230      /          /          Yuki       Natsu     /       |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      Mony    |
+| g|8.5    0600-1430      Madi       Madi       Madi       Madi      Madi    |
+| h|7.5    0700-1430      Yui        Yui        Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+
+
+Emma    - away Wednesday
+Lani    - away Thursday
+Erol    - Final week !!!
+Yuna    - Final week !! (maybe)
+Monday  - Closed
+Tuesday - Closed for Melbourne Cup holiday
+Roster will be changed slightly from this week as Nere is not here.
+
+CP-c*     Mon-Fri      |LC 0700-0800 (1.0)
+                       |CP 0800-1430 (6.5) [7.5]
+
+Rina+     Wed          |CP 0800-1600 [8.0]
+
+Yukari^   Fri          |CP 0800-1300 [5.0]
+
+Dasol~@   Wed          |CP 0730-0930 [2.0] (went home early)
+Dasol~    Thu          |CP 0900-1500 [6.0]
+Erol~     Fri          |CP 0900-1500 [6.0]
+
+&#x1F4CC&#x1F4CC <mark><b>   Roster change !   </b></mark>
+CP-b new time: 0800-1600 [8.0]. Old time was 0730-1530 [8.0]
+CP-c new time: 0700-1430 [7.5]. Old time was 0800-1430 [6.5]
+
+LC-g new time: 0630-1430 [8.0]. Old time was 0700-1430 [7.5]
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 31/10/2022                                  |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      /          /          Nere'      Nere'     Nere'   |
+| b|8.0    0800-1600      /          /          Yuna       Emma      Emma    |
+| c|7.5*   0700-1430      /          /          Dasol~@    Rina      Yuna    |
+| d|6.5    0800-1430      /          /          Rina+      Rei       Yukari^ |
+| e|6.5    0900-1530      /          /          Songi      Dasol~    Erol~   |
+| i|6.0    1000-1600      /          /          Lani       Erol      Lani    |
+| t|4.0    1000-1400      /          /          Yuki       Yuki      /       |
+|                                                                            |
+|          LC                                                                |
+| f|                      /          /          Mony       Mony      Mony    |
+| g|8.5    0600-1430      /          /          Madi       Madi      Madi    |
+| h|8.0    0630-1430      /          /          Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+=== Ongoing ===
+Rina: 	Away: 15/11 tue
+              18/11 fri
+              25/11 fri
+
+Lani: last day of working Mon 28/11, returning 11/01/23
+
+Yuki: leaving Melb Thu 22/12
+
+Rei avail Mon, Tue, Thu for Week beginning
+          31/10
+          07/11
+          14/11
+
+
+
+================
+
+
+Nere'     Mon-Fri      |via FaceTime
+
+CP-c*     Mon-Fri      |LC 0700-0800 (1.0) 
+                       |CP 0800-1430 (6.5) [7.5]
+                     
+Rina+     Mon          |LC 0700-0800 (1.0)
+                       |CP 0800-1500 (7.0) [8.0]  
+Yukari-   Mon          |CP 0900-1300 [4.0]
+
+Rina!     Tue          |LC 0700-0800 (1.0)
+                       |CP 0800-1430 (6.5) [7.5]
+
+Dasol+    Thu          |LC 0700-0800 (1.0)
+                       |CP 0800-1430 (6.5) [7.5]
+
+Dasol^    Fri          <del>|CP 0800-1600 [8.0]</del>
+                       |CP 0900-1600 [7.0]
+Rei&                   |CP 0800-1400 [6.0]
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 07/11/2022                                  |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere'      Nere'      Nere'      Nere'     Nere'   |
+| b|8.0    0800-1600      Emma       Emma       Emma       Emma      Emma    |
+| c|7.5*   0700-1430      Rei        Rei        Rina       Rei       Rina    |
+| d|6.5    0800-1430      Rina+      Rina!      Erol       Dasol+    Rei&    |
+| e|6.0    0900-1500      Yukari-    Yuki    <del>Songi</del>Yuki     Yuki      Dasol^  |
+| i|6.0    1000-1600      Lani       Dasol      Dasol      Lani      []      |
+| t|4.0    0900-1300      /          /          /          /         /       |
+| v|1.0    1130-1230      /          /          Asako      /         /       |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      Mony    |
+| g|8.5    0600-1430      Madi       Madi       Madi       Madi      Madi    |
+| h|8.0    0630-1430      Yui        Yui        Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+
+
+Yuki: available 5 days from this week.
+Rina: away on Tue 15, Thu 17, Fri 18
+
+Rina+     Mon          |LC 0700-0800 (1.0)
+                       |CP 0800-1500 (7.0) [8.0]
+
+<del>Dasol^    Tue          |CP 0900-1600 [7.0]</del>
+
+Yuki>     Tue,Thu      |LC 0700-0800 (1.0)
+                       |CP 0800-1430 (6.5) [7.5]                       
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 14/11/2022                                  |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere'      Nere'      Nere'      Nere'     Nere'   |
+| b|8.0    0800-1600      Emma       Emma       Emma%      Emma      Emma%   |
+| c|7.5*   0700-1430      Rei        Rei        Rina       Rei       Dasol   |
+| d|6.5    0800-1430      Rina+      Yuki>      Yuki       Yuki>     Yuki    |
+| e|6.0    0900-1500      Yukari     Lani       Yukari     Lani      Yukari  |
+| i|6.0    1000-1600      Dasol      Dasol      Dasol      Dasol     Lani    |
+| t|4.0    0900-1300      Asako      Asako      Asako      /         /       |
+| v|1.0    0930-1030      /          /          /          Norie     /       |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      Mony    |
+| g|9.5    0530-1500      Madi       Madi       Madi       Madi      Madi    |
+| h|8.0    0630-1430      Yui        Yui        Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+
+Rina:  Away           Mon 21, Fri 25 
+Dasol: Away           Tue 22
+Lani:  Away           Tue 22
+Rei:   Leaving early  Tue 22
+Madi:  Leaving early  Fri 25, 1pm
+
+
+Yuki+      Mon       |LC 0700-0800 (1.0)
+                     |CP 0800-1430 (6.5) [7.5]
+
+Rei#       Tue       |LC 0730-0800 (0.5)
+                     |CP 0800-1100 (3.0) [3.5]
+
+Yuki#      Tue       |CP 0900-1030 (1.5)
+                     |LC 1030-1400 (3.5)
+                     |CP 1400-1600 (2.0) [7.0]
+                 
+Emma*      Wed,Fri   |LC 0730-0800 (0.5)
+                     |CP 0800-1600 (8.0) [8.5]
+
+Dasol+     Thu       |LC 0700-0800 (1.0)
+                     |CP 0800-1430 (6.5) [7.5]
+                   
+Madi@      Fri       |LC 0530-1300 [7.5]
+
+Yuki+Lani@ Fri       Yuki arrive LC 1000, go back to CP 1400
+                     Lani arrive LC 1230, go back to CP 1430
+
+
+
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 21/11/2022                                  |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere'      Nere'      Nere'      Nere'     Nere'   |
+| b|8.0    0800-1600      Emma       Emma       Emma*      Emma      Emma*   |
+| c|7.5*   0700-1430      Rei        Rina       Dasol      Rei       Dasol   |
+| d|6.5    0800-1430      Yuki+   Rei#/Yuki#    Yuki       Dasol+    Yuki    |
+| e|6.0    0900-1500      Yukari     Yukari     Lani       Yukari    Yukari  |
+| i|6.0    1000-1600      Dasol      /          Rina       Rina      Lani    |
+| t|4.0    1000-1400      Norie      Norie      Norie      /         /       |
+| x|5.0    0930-1430      /          /          /          /         Norie   |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      Mony    |
+| g|9.5    0530-1500      Madi       Madi       Madi       Madi  Madi@/Y+L@  |
+| h|8.0    0630-1430      Yui        Yui        Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+--><!--
+Rina:   Going back to Japan for emergency! Away until further notice
+Lani:   Going back to Japan for holiday, returning Wed 11/01/23
+Yuki:   Away on          Wed 30/11
+Yukari: Away on          Thu 01/12
+
+Emma:	&#x1F4A5 <b>Last day</b> &#x1F4A5   Fri 02/12, returning Wed 04/01/23
+
+Additions:
+Norie~       Mon       |CP 0900-1600 [7.0]
+
+Norie~       Thu       |CP 0930-1600 [6.5]
+
+Emma*        Wed       |LC 0730-0800 (0.5)
+                       |CP 0800-1600 (8.0) [8.5]
+
+Rei-         Wed       |CP 1200-1430 [2.5]
+                       
+Norie+       Wed       |CP 0800-1600 [8.0]
+
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 28/11/2022                                  |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere'      Nere'      Nere'      Nere'     Nere'   |
+| b|8.0    0800-1600      Emma       Emma       Emma*      Emma      Emma    |
+| c|7.5    0700-1430      Yuki       Yuki       Dasol      Dasol     Yuki    |
+| d|6.5    0800-1430      Rei        Rei        Rei-       Rei       Rei     |
+| e|6.0    0900-1500      Norie~     Yukari     Yukari     Yuki      Yukari  |
+| i|6.0    1000-1600      Dasol      Dasol      Norie+     Norie     Dasol   |
+| t|4.0    0900-1300      Asako      Asako      Asako      /         /       |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      Mony    |
+| g|9.5    0530-1500      Madi       Madi       Madi       Madi      Madi    |
+| h|8.0    0630-1430      Yui        Yui        Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+Asako:     Passes trial!! Welcome to B3 Cafe (:
+Yui:       Away Tue
+Yukari:    Away Thu
+
+
+
+Rei&       Wed          |CP 1130-1430 [3.0]
+
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 05/12/2022                                  |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere'      Nere'      Nere'      Nere'     Nere'   |
+| b|8.0    0800-1600      Monin      Monin      Monin      Monin     Monin   |
+| c|7.5    0700-1430*     Yukari     Norie      Dasol      Norie     Yukari  |
+| d|6.5    0800-1430      Rei        Rei        Yukari     Rei       Rei     |
+| e|6.5    0900-1530      Norie      Yuki       Yuki       Yuki      Norie   |
+| i|6.0    1000-1600      Dasol      Dasol      Norie      Dasol     Dasol   |
+| j|3.0    0930-1300      /          Asako      Rei*       Asako     /       |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      Mony    |
+| g|9.5    0530-1500      Madi       Madi       Madi       Madi      Madi    |
+| h|7.5    0700-1430      Yui        Yukari     Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+&#x1F4CC&#x1F4CC <mark style="background-color:#ffff7f;"><b>   Roster change   </b></mark> &#x1F4CC&#x1F4CC
+CP-c: 0730-1530 [8.0] (old was: 0700-1430 [7.5]) 
+CP-e: 0900-1430 [5.5] (old was: 0900-1530 [6.5])
+CP-j: 1000-1300 [3.0] (old was: 0930-1300 [3.5])
+
+
+Yukari     Away Tue, Thu
+Rei        Away Fri
+
+
+CP-c*      Mon-Fri         |LC 0730-0800 (0.5) 
+                           |CP 0800-1530 (7.5) [8.0]
+
+<del>Rei-       Wed             |CP 1200-1430 [2.5]</del>
+<del>Yuki&      Wed             |CP 0800-1430 [6.5]</del>
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 12/12/2022                                  |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere'      Nere'      Nere'      Nere'     Nere'   |
+| b|                      Monin      Monin      Monin      Monin     Monin   |
+| c|8.0    0730-1530      Norie      Dasol      Dasol      Norie     Yuki    |
+| d|6.5    0800-1430      Rei        Rei        Rei        Rei       Norie   |
+| e|5.5    0900-1430      Yukari     Yuki       Yuki       Yuki      Yukari  |
+| i|6.0    1000-1600      Dasol      Norie      Norie      Dasol     Dasol   |
+| j|3.0    1000-1300      /          <del>Asako</del>      <del>Asak</del>o      /         /       |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      Mony    |
+| g|9.5    0530-1500      Madi       Madi       Madi       Madi      Madi    |
+| h|7.5    0700-1430      Yui        Yui        Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+
+--><!--
+Norie      Away Tue
+Yukari     Away Tue, Thu
+Asako      Away Tue, Thu
+Yuki       Away Tue, Wed, Thu
+Rei        Away Wed
+
+Thursday   Last day of 2022 !!
+
+CP-c*      Mon-Fri              |LC 0730-0800 (0.5)
+                                |CP 0800-1530 (7.5) [8.0]
+
+Dasol~     Mon                  |LC 0730-0800 (0.5)
+                                |CP 0800-1600 (8.0) [8.5]
+
+Yuki~      Mon                  Yuki sick all day
+
+Dasol^     Tue                  |LC 0730-0800 (0.5)
+                                |CP 0800-1600 (8.0) [8.5]
+
+Asako-     Tue                  |CP 0900-1330 [4.5]
+
+Norie+     Wed                  |CP 0800-1430 [6.5]
+
+Dasol$     Thu                  |CP 0900-1600 [7.0]
+
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 19/12/2022                                  |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere'      Nere'      Nere'      Nere'     /       |
+| b|                      Monin      Monin      Monin      Monin     /       |
+| c|8.0    0730-1530      <del>Yuki~</del>      Dasol^     Norie      Norie     /       |
+| d|6.5    0800-1430      Rei        Rei        Rei        Rei       /       |
+| e|5.5    0900-1430      Dasol~     Asako-     Yukari     Dasol$    /       |
+| i|6.0    1000-1600      <del>Norie</del>      /          Dasol      /         /       |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      /       |
+| g|9.5    0530-1500      Madi       Madi       Madi       Madi      /       |
+| h|7.5    0700-1430      Yui        Yui        Yui        Yui       /       |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|-->
+
+People returning -
+First week: Emma, Yuna
+Yuki returns Thu 26 Jan !
+Lani returns Mon 13 Feb !
+
+People leaving :(
+Yukari going to the farm! Her last day week is first week back !
+Norie going to Japan! Her last day will be Fri 20 Jan (maybe Mon 23?)!
+
+
+
+Last week for Yukari !
+Last week for Norie !
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 16/01/2023                                  |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere'      Nere'      Nere'      Nere'     Nere'   |
+| b|8.0    0800-1600      Norie      Emma       Emma       Emma      Emma    |
+| c|8.5    0700-1530      Dasol      Yuna       Dasol      Yuna      Yuna    |
+| d|6.5    0800-1430      Rei        Rei        Yuna       Rei       Rei     |
+| e|5.5    0900-1430      Emma       Asako      Yukari     Dasol     Norie   |
+| i|6.0    1000-1600      Yuna       Dasol      Norie      Norie     Dasol   |
+| t|4.0    1000-1400      /          /          /          /         /       |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      Mony    |
+| g|9.5    0530-1500      Madi       Madi       Madi       Madi      Madi    |
+| h|8.0    0630-1430      Yui        Yui        Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+
+Yuna away Tue, Wed
+Thu**: We might be closed this day for Aus Day
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 23/01/2023     DRAFT                        |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu**     Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere'      Nere'      Nere'      Nere'     Nere'   |
+| b|8.0    0800-1600      Emma       Emma       Emma       Emma      Emma    |
+| c|8.5    0700-1530      Dasol      Dasol      Dasol      Yuna      Yuna    |
+| d|6.5    0800-1430      Rei        Rei        Rei        Dasol     Dasol   |
+| e|5.5    0900-1430      Asako      Asako      Asako      Asako     Asako   |
+| i|6.0    1000-1600      Yuna       []         []         []        []      |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      Mony    |
+| g|9.5    0530-1500      Madi       Madi       Madi       Madi      Madi    |
+| h|8.0    0630-1430      Yui        Yui        Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For week starting       Monday 30/01/2023     DRAFT                        |
+|============================================================================|
+| Pos      Time           Mon        Tue        Wed        Thu       Fri     |
+|----------------------------------------------------------------------------|
+|============================================================================|
+|          CP                                                                |
+| a|                      Nere'      Nere'      Nere'      Nere'     Nere'   |
+| b|8.0    0800-1600      Emma       Emma       Emma       Emma      Emma    |
+| c|8.5    0700-1530      Dasol      Dasol+     Dasol+     Yuna+     Yuna+   |
+| d|6.5    0800-1430      Rei        Rei        Rei        Dasol     Dasol   |
+| e|5.5    0900-1430      Asako      Asako      Asako      Asako     Asako   |
+| i|6.0    1000-1600      Yuna       Yuki       Yuki       Yuki      Yuki    |
+|                                                                            |
+|          LC                                                                |
+| f|                      Mony       Mony       Mony       Mony      Mony    |
+| g|9.5    0530-1500      Madi       Madi       Madi       Madi      Madi    |
+| h|8.0    0630-1430      Yui        Yui        Yui        Yui       Yui     |
+|                                                                            |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+</span></span></div>
+</pre>
+</body>
+</html>
